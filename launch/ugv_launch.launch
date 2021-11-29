@@ -1,0 +1,9 @@
+<launch>
+
+    <param name = "robot_description" 
+    command = "cat '$(find robolab_miniproject)/urdf/rover_bot.urdf'"/>
+
+    <node name = "spawn_robolab_ugv" pkg = "gazebo_ros" type = "spawn_model" output = "screen"
+    args = "-urdf -param robot_description -model rover_bot" />
+
+</launch>
