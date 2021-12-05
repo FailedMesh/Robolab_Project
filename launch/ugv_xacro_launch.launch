@@ -10,4 +10,7 @@
 <node name = "spawn_robolab_ugv" pkg = "gazebo_ros" type = "spawn_model" output = "screen"
     args = "-urdf -param robot_description -model rover_bot_xacro -x $(arg x) -y $(arg y) -z $(arg z)" />
 
+<rosparam file = "$(find robolab_miniproject)/config/config.yaml" command = "load"/>
+<node name = "controller_spawner" pkg = "robot_state_publisher" type
+
 </launch>
