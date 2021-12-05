@@ -162,6 +162,10 @@ include_directories(
  catkin_install_python(PROGRAMS
    src/gesture_control.py
    src/GestureControl.py
+   scripts/DCMotorTL.py
+   scripts/Teleop.py
+   scripts/ServoTL.py
+   scripts/DCMotorTL2.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
