@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node name ="Top_left_motor" pkg="motor_control_testing" type="DCMotorTL2.py" output="screen"/>
+	<node name ="Top_right_motor" pkg="motor_control_testing" type="DCMotorTL.py" output="screen"/>
+
+</launch>
